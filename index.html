@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Under Construction</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      text-align: center;
+    }
+    .message {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .illustration {
+      max-width: 500px;
+      margin-bottom: 20px;
+    }
+    .loader {
+      width: 80%;
+      max-width: 300px;
+      height: 10px;
+      background-color: #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    .loader div {
+      width: 50%;
+      height: 100%;
+      background-color: #4CAF50;
+      animation: loading 2s infinite;
+    }
+    @keyframes loading {
+      0% { width: 0; }
+      100% { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="construction.png" alt="Construction Icon" class="illustration">
+    <div class="message">Website Under Construction</div>
+    <div class="loader">
+      <div></div>
+    </div>
+  </div>
+</body>
+</html>
