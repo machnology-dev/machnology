@@ -18,13 +18,14 @@
     }
     .container {
       text-align: center;
+      padding: 20px;
     }
     .message {
       font-size: 2em;
       margin-bottom: 20px;
     }
     .illustration {
-      max-width: 500px;
+      max-width: 500px; /* Increased icon size */
       margin-bottom: 20px;
     }
     .loader {
@@ -45,6 +46,17 @@
     @keyframes loading {
       0% { width: 0; }
       100% { width: 100%; }
+    }
+    @media (max-width: 600px) {
+      .message {
+        font-size: 1.5em;
+      }
+      .illustration {
+        max-width: 300px;
+      }
+      .loader {
+        width: 90%;
+      }
     }
   </style>
 </head>
