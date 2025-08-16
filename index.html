@@ -1,72 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Under Construction</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #f2f2f2;
-      font-family: Arial, sans-serif;
-    }
-    .container {
-      text-align: center;
-      padding: 20px;
-    }
-    .message {
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-    .illustration {
-      max-width: 500px; /* Increased icon size */
-      margin-bottom: 20px;
-    }
-    .loader {
-      width: 80%;
-      max-width: 300px;
-      height: 10px;
-      background-color: #ccc;
-      border-radius: 5px;
-      overflow: hidden;
-      margin: 0 auto;
-    }
-    .loader div {
-      width: 50%;
-      height: 100%;
-      background-color: #4CAF50;
-      animation: loading 2s infinite;
-    }
-    @keyframes loading {
-      0% { width: 0; }
-      100% { width: 100%; }
-    }
-    @media (max-width: 600px) {
-      .message {
-        font-size: 1.5em;
-      }
-      .illustration {
-        max-width: 300px;
-      }
-      .loader {
-        width: 90%;
-      }
-    }
-  </style>
+  <title>Machnology - Powering Industries</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-  <div class="container">
-    <img src="construction.png" alt="Construction Icon" class="illustration">
-    <div class="message">Website Under Construction</div>
-    <div class="loader">
-      <div></div>
-    </div>
+
+  <div class="container-center">
+
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo">
+            <span>Machnology</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#intro">Home</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#industries">Industries</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <!-- Welcome Quote -->
+    <!-- Welcome Quote -->
+    <section id="intro" class="quote">
+      <div class="container">
+        <div class="quote-text">
+          <h1>Innovating Engineering, Empowering Industries, Transforming the Future</h1>
+        </div>
+        <div class="quote-illustration">
+          <img src="assets/intro-illus.png" alt="Machnology Innovation Illustration">
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Introduction -->
+    <section class="intro">
+      <h2>Machnology – Powering Industries with Engineering Excellence</h2>
+      <p>
+        At Machnology, we deliver innovative engineering solutions across a diverse range of industries,
+        helping businesses enhance efficiency, reliability, and sustainability. Our expertise spans
+        core engineering, digital transformation, and industrial optimization, ensuring seamless
+        integration of AI, IoT, and advanced analytics for smarter operations.
+      </p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+
+        <div class="service-card">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Technical Consultancy & R&D</h3>
+          <ul>
+            <li>Technical Research and Innovation</li>
+            <li>Machine Design and Development</li>
+            <li>Plant Layout and Process Optimization</li>
+            <li>Engineering Design and Feasibility Studies</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-robot"></i>
+          <h3>AI, ML & IoT Solutions</h3>
+          <ul>
+            <li>AI-powered Predictive Maintenance and Quality Control</li>
+            <li>Machine Learning for Data Analysis and Decision Making</li>
+            <li>IoT Solutions for Smart Monitoring and Automation</li>
+            <li>Cloud Integration and Cybersecurity</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-cogs"></i>
+          <h3>Operations & Maintenance Management</h3>
+          <ul>
+            <li>Maintenance Strategy Development</li>
+            <li>Reliability-Centered Maintenance (RCM)</li>
+            <li>Asset Performance Optimization</li>
+            <li>Condition Monitoring and Predictive Analytics</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-drafting-compass"></i>
+          <h3>Engineering Services</h3>
+          <ul>
+            <li>Mechanical Engineering (HVAC, Piping, Industrial Equipment)</li>
+            <li>Electrical Engineering (Power Systems, Automation, SCADA)</li>
+            <li>Civil & Structural Engineering (Construction, Infrastructure)</li>
+            <li>Chemical Engineering (Process Safety, Plant Operations)</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-vial"></i>
+          <h3>Technical Testing & Analysis</h3>
+          <ul>
+            <li>Materials Testing & Structural Analysis</li>
+            <li>Non-Destructive Testing (NDT) Services</li>
+            <li>Environmental Testing (Air, Water, Soil Analysis)</li>
+            <li>Failure Analysis and Risk Assessment</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <h3>Training & Development</h3>
+          <ul>
+            <li>Industry-Specific Technical Workshops</li>
+            <li>Soft Skills and Leadership Development</li>
+            <li>Knowledge Sharing and Workforce Upskilling</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Industries We Serve -->
+    <section id="industries" class="industries">
+      <h2>Industries We Serve</h2>
+      <ul>
+        <li><i class="fas fa-industry"></i> Manufacturing & Processing</li>
+        <li><i class="fas fa-car"></i> Automobile & Heavy Engineering</li>
+        <li><i class="fas fa-fire"></i> Steel & Cement Plants</li>
+        <li><i class="fas fa-flask"></i> Refineries & Chemical Industries</li>
+        <li><i class="fas fa-bolt"></i> Power Generation (Thermal, Wind, Hydro, Renewable)</li>
+        <li><i class="fas fa-oil-can"></i> Oil & Gas & Energy Sectors</li>
+        <li><i class="fas fa-city"></i> Construction & Infrastructure</li>
+        <li><i class="fas fa-network-wired"></i> Information Technology & Digital Solutions</li>
+      </ul>
+      <p class="intro">From machine design and predictive maintenance to process optimization and technical consultancy, Machnology is
+        your trusted partner for engineering innovation and operational excellence.</p>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section class="mission">
+      <h2>Machnology – Our Mission, Vision & Motive</h2>
+      <div class="mission-content">
+
+        <div class="mission-block">
+          <h3>Our Vision</h3>
+          <p>
+            To be a global leader in engineering innovation and technology-driven solutions,
+            transforming industries through cutting-edge research, AI integration, and
+            smart automation for a sustainable and efficient future.
+          </p>
+        </div>
+
+        <div class="mission-block">
+          <h3>Our Mission</h3>
+          <ul>
+            <li>✔ Empower Industries with advanced engineering, AI, and IoT solutions.</li>
+            <li>✔ Drive Innovation through continuous R&D and process optimization.</li>
+            <li>✔ Deliver Excellence with future-ready solutions and minimized risks.</li>
+            <li>✔ Foster Digital Transformation via smart technologies integration.</li>
+          </ul>
+        </div>
+
+        <div class="mission-block">
+          <h3>Our Motive</h3>
+          <p>
+            At Machnology, our motive is to bridge the gap between engineering and technology,
+            creating solutions that drive industrial growth, sustainability, and digital transformation.
+            We believe in engineering possibilities, optimizing performance, and powering progress to
+            help industries achieve long-term success in a rapidly evolving world.
+          </p>
+        </div>
+
+      </div>
+    </section>
+    <!-- Why Choose -->
+    <section class="why">
+      <h2>Why Choose Machnology?</h2>
+      <ul>
+        <li>✔ Innovative Solutions – Smart engineering powered by AI, ML & IoT</li>
+        <li>✔ Optimized Performance – Reliability, process efficiency & automation</li>
+        <li>✔ Seamless Integration – Synchronizing industrial systems</li>
+        <li>✔ Future-Ready Approach – Driving digital transformation</li>
+      </ul>
+    </section>
+
   </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <p><strong>HQ:</strong> <a
+            href="https://www.google.com/maps?q=Sushila+Sadan,+Bagaha,+Nimoia+East,+East+Champaran,+Bihar,+845315"
+            target="_blank" rel="noopener noreferrer">
+            Sushila Sadan, Bagaha, Nimoia East, East Champaran, Bihar, 845315
+          </a></p>
+        <p><strong>RO:</strong><a href="https://www.google.com/maps?q=crystal+empire+Township,+Vasai,+Mumbai,+401209"
+            target="_blank" rel="noopener noreferrer">
+            Yashwant Viva Township, Vasai, Mumbai, 401209
+          </a></p>
+      </div>
+      <div class="footer-right">
+        <p><i class="fas fa-envelope"></i> <a href="mailto:info.machnology@gmail.com">info.machnology@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> <a href="tel:+918001911400">800 1911 400</a></p>
+        <div class="social">
+          <a href="linkedin.com/in/ajaykumararya"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="https://wa.me/918001911400?text=Hello%20Machnology"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="copy">&copy; 2025 Machnology. All rights reserved.</p>
+  </footer>
+
 </body>
+<script src="script.js"></script>
+
 </html>
